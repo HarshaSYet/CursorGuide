@@ -1,5 +1,5 @@
 # CursorGuide
-This repository serves as a guide to use cursor like a pro
+This repository serves as a guide to use cursor like a pro.
 
 ## 1. Interaction Modes & Everyday Productivity
 
@@ -64,8 +64,6 @@ The quality of Cursor's output is directly proportional to the quality of contex
 
 ## 3. Safety Nets & Stability Tools
 
-These prevent AI-assisted coding from becoming chaotic.
-
 * **Restore Checkpoints**
     * Save known-good states
     * Roll back when AI breaks things
@@ -114,8 +112,6 @@ Commands let you direct the AI's behavior explicitly, without rewriting prompts 
 
 ## 5. Professional Project Workflow (Big Picture)
 
-This is where Cursor moves from "cool tool" to force multiplier.
-
 ### 5.1 Plan Before Code
 
 * Ask Cursor to:
@@ -138,3 +134,16 @@ Explicitly instruct:
 * Prevents guessing
 * Reduces low-quality output
 * Works especially well with agent mode
+
+## Run the project
+
+Make sure the following are installed on your system:
+
+- **Node.js**: `20.19.6`
+- **Yarn**: `4.12.0`
+
+Then install dependencies and run the project:
+
+- `yarn install`
+- `yarn dev`
+
