@@ -90,6 +90,8 @@ This is how you make Cursor feel like your engineer.
         * Concise, to-the-point explanations
         * Avoiding filler or unnecessary verbosity
     * Acts as a persistent playbook that guides the AI's behavior across the project.
+    * Project rules live in `.cursor/rules`. 
+    
 
 ### 4.2 Model Strategy
 
@@ -105,6 +107,7 @@ Commands let you direct the AI's behavior explicitly, without rewriting prompts 
 * **Slash Commands (/)**
     * Used inside chat to signal intent clearly.
     * Reduce ambiguity and improve consistency of responses.
+    * Project commands live in `.cursor/commands`. 
 * **Summarization**
     * Summarization allows Cursor to compress large or complex context into a concise, high-signal summary.
     * Using the `/summarize` command
