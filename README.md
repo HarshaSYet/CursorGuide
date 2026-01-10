@@ -56,6 +56,9 @@ The quality of Cursor's output is directly proportional to the quality of contex
 * **.cursorignore**
     * Exclude node_modules, logs, build folders
     * Prevents wasted "brain power"
+    * Open Cursor Settings (Cmd + Shift + J), go to Indexing & Docs and see View included files.
+    * To create a .cursorignore file click on Edit, add Add directories or file patterns to ignore during indexing.
+    * In Cursor Settings, click on Sync and see View included files to see updated indexed files.
 * **Context Resetting**
     * Start a new chat when:
         * Responses degrade
