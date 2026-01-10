@@ -1,0 +1,36 @@
+---
+name: Clean Code
+description: Guides TypeScript code towards clean, readable, and maintainable standards using key programming principles.
+alwaysApply: true
+---
+# Overview
+
+This rule enforces **core clean code and software design principles** for TypeScript files.  
+Focus is on simplicity, readability, maintainability, and correct structure. Apply when writing or refactoring `.ts` code.
+
+---
+
+## Key Principles
+
+### 1. SOLID
+- **S**: Single Responsibility Principle — one responsibility per class/module  
+- **O**: Open/Closed Principle — open for extension, closed for modification  
+- **L**: Liskov Substitution Principle — subtypes replace base types safely  
+- **I**: Interface Segregation Principle — prefer many small interfaces  
+- **D**: Dependency Inversion Principle — depend on abstractions, not concrete implementations
+
+### 2. Higher-Level Guidelines
+- **KISS**: Keep It Simple — avoid unnecessary complexity  
+- **DRY**: Don’t Repeat Yourself — abstract repeated logic  
+- **YAGNI**: You Aren’t Gonna Need It — implement features only when necessary  
+- **Composition over Inheritance** — favor composing small units over deep inheritance chains
+
+### 3. TypeScript-Specific Rules
+- Prefer explicit types over `any`  
+- Limit function parameters to ≤ 3 when possible  
+- Keep functions short and focused  
+- Use early returns to reduce nesting  
+- Descriptive, consistent naming (`camelCase` for vars/functions, `PascalCase` for types/classes)
+
+---
+

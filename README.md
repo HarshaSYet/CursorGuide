@@ -71,6 +71,7 @@ The quality of Cursor's output is directly proportional to the quality of contex
     * Save known-good states
     * Roll back when AI breaks things
     * Think of them as manual undo at project scale
+    * To do this, find the relevant message in your chat history and click on ↩️
 * **Git as a Companion**
     * Commit after every successful step
     * Treat commits as "safe checkpoints"
