@@ -154,3 +154,53 @@ Then install dependencies and run the project:
 - `yarn install`
 - `yarn dev`
 
+## Cursor Submodule Setup and Reset
+
+### 1️⃣ Add the submodule and set up symlinks
+
+From the root of the parent repository:
+
+```bash
+
+# Add the cursor-kit repository as a submodule
+git submodule add <SUBMODULE-URL> cursor-kit
+
+# Create symlinks for Cursor configuration and ignore files
+ln -s cursor-kit/.cursor .cursor
+ln -s cursor-kit/.cursorignore .cursorignore
+
+```
+
+### 2️⃣ Pull the latest changes from the submodule
+
+```bash
+
+cd cursor-kit
+git pull origin main
+cd ..
+
+```
+
+### 3️⃣ Deleting and re-adding the submodule (if needed)
+
+```bash
+
+# Remove submodule metadata
+rm -rf .git/modules/cursor-kit
+
+# Remove the submodule folder
+rm -rf cursor-kit
+
+# Reset the parent repository index
+git reset --hard
+
+# Re-add the submodule (replace <SUBMODULE-URL> with your repo URL)
+git submodule add <SUBMODULE-URL> cursor-kit
+
+# Recreate the symlinks
+ln -s cursor-kit/.cursor .cursor
+ln -s cursor-kit/.cursorignore .cursorignore
+
+```
+
+
